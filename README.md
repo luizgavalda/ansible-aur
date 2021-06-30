@@ -38,13 +38,13 @@ Note: The module is installed in `/usr/share/ansible/plugins/modules` which is o
 ### Manual installation
 Just clone the *ansible-aur* repository into your user custom-module directory:
 ```
-git clone https://github.com/kewlfft/ansible-aur.git ~/.ansible/plugins/modules/aur
+git clone https://github.com/luizgavalda/ansible-aur.git ~/.ansible/plugins/modules/aur
 ```
 
 ### Ansible Galaxy
 *ansible-aur* is available in Galaxy which is a hub for sharing Ansible content. To download it, use:
 ```
-ansible-galaxy install kewlfft.aur
+ansible-galaxy install luizgavalda.aur
 ```
 
 Note: If this module is installed from Ansible Galaxy, you will need to list it explicitly in your playbook:
@@ -52,7 +52,7 @@ Note: If this module is installed from Ansible Galaxy, you will need to list it 
 # playbook.yml
 - hosts: localhost
   roles:
-  - kewlfft.aur
+  - luizgavalda.aur
   tasks:
   - aur: name=package_name
 ```
@@ -61,7 +61,7 @@ or in your role:
 ```
 # meta/main.yml
 dependencies:
-- kewlfft.aur
+- luizgavalda.aur
 ```
 
 ```
